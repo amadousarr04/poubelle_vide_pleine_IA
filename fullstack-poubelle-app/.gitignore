@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.Python
+venv/
+env/
+.env
+
+# Models (utiliser Git LFS ou hébergement externe)
+backend/best.pt
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
