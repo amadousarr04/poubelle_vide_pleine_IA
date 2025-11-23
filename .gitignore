@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.Python
+venv/
+env/
+.env
+
+# Models - IMPORTANT: best.pt est géré par Git LFS, ne pas ignorer
+# backend/best.pt
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
