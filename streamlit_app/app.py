@@ -226,6 +226,10 @@ def detect_bin(image, model, confidence_threshold=0.25):
     """
     start_time = time.time()
     
+    # Conversion en RGB si nécessaire
+    if image.mode != 'RGB':
+        image = image.convert('RGB')
+    
     # Conversion PIL vers numpy
     img_array = np.array(image)
     
