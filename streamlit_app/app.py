@@ -201,7 +201,9 @@ if 'stats' not in st.session_state:
 def load_model():
     """Charge le modèle YOLOv9 avec cache"""
     model_paths = [
+        Path(__file__).parent / "best.pt",  # Même dossier que app.py
         Path("best.pt"),
+        Path("streamlit_app/best.pt"),
         Path("../best.pt"),
         Path("backend/best.pt"),
         Path("../backend/best.pt"),
@@ -213,6 +215,7 @@ def load_model():
                 model = YOLO(str(path))
                 return model, str(path.absolute())
             except Exception as e:
+                st.error(f"Erreur chargement {path}: {e}")
                 continue
     
     return None, None
