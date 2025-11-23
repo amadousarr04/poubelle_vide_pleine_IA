@@ -3,9 +3,7 @@
 // ============================================================================
 
 // URL de l'API backend
-const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    ? 'http://127.0.0.1:8000'  // Développement local
-    : window.location.origin;   // Production (même domaine)
+const API_URL = "https://detection-poubelle.onrender.com";
 
 // ============================================================================
 // ELEMENTS DOM
